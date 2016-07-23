@@ -22,6 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
+#### Configure Gem with your API Key
+
+Once you install, the first step is to configure the gem to use your Launch27 API Key.
+
+Login to your Launch27 account, go to settings and click the `API Access` tab. From there you will see two API keys. One for 'Test' and one for 'Live'.
+
+Add that key to your environment variables.
+
+Create a config file with the following in there:
+
+````
+Launch27.configure do |config|
+  config.api_key = 'ENV["MY_LAUNCH27_API_KEY"]'
+end
+````
+
+Where `ENV["MY_LAUNCH27_API_KEY"]` is set wherever your Environment Variables are set.
+
+
+
 TODO: Write usage instructions here
 
 ## Development
@@ -38,4 +58,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
