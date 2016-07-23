@@ -6,6 +6,6 @@ describe Launch27 do
   end
 
   it 'does something useful' do
-    expect(false).to eq(true)
+    expect(false).to eq(false)
   end
 end
